@@ -1,6 +1,6 @@
 import * as $ from 'jquery'
 
-function createStatistics() {
+function createStatistics(): { destroy: () => string; getClicks: () => number | string } {
     let counter = 0
     let isDestroyed = false
     const listener = () => counter++
@@ -19,4 +19,4 @@ function createStatistics() {
         }
     }
   }
-  window.statistics = createStatistics()
+    window['statistics'] = createStatistics()

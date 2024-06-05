@@ -8,11 +8,12 @@ body {
 
 h1 {
     text-transform: uppercase;
-    text-align: center;
+
     font-weight: 500;
 }
 
 .container {
+    text-align: center;
     padding: 20px 40px;
     max-width: 1200px;
     margin-left: auto;
